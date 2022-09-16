@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../src/assets/SCSS/vendors/bootstrap.min.css';
+
+* {
+    font-family: sans-serif;
+}
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.form-control {
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-btn {
+    width: 100%;
+    background-color: indianred;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+
+    &:disabled {
+        background-color: #eee;
+        color: #333333;
+    }
+}
