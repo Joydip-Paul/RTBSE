@@ -5,11 +5,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PasswordGenerateComponent } from './components/password-generate/password-generate.component';
+import { TypingMasterComponent } from './components/typing-master/typing-master.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PasswordGenerateComponent
+    PasswordGenerateComponent,
+    TypingMasterComponent
   ],
   imports: [
     BrowserModule,
