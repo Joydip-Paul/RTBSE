@@ -49,7 +49,7 @@ export class PasswordGenerateComponent implements OnInit {
     // ---------------------- functionality
     this.result = true;
     const letters = 'abcdefghFRGijklABCmnopqGTYJEWrstuvwxyz';
-    const numbers = '123456789';
+    const numbers = '01234567891234567890';
     const symbols = '@#$*&%!';
     let validChart = ""
     let generatedPassword = '';
