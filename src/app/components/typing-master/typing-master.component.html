@@ -5,15 +5,23 @@
                 <div class="box">
                     <h1>Typing Master</h1>
                     <div class="text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, qui. Aspernatur architecto
-                            at,
-                            cumque blanditiis in excepturi quos inventore quisquam!</p>
+                        <p>
+                            <span [class]="compare(singleLetter, enteredText[i])"
+                                *ngFor="let singleLetter of text.split(''); let i = index;">{{singleLetter}}</span>
+                        </p>
                     </div>
                     <div class="type-area">
-                        <input type="text" class="form-control" placeholder="type here...">
+                        <input type="text" class="form-control" placeholder="type here..." #event
+                            (input)="typeOnchange(event.value)">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<div *ngIf="text === enteredText" class="success-box center-box">
+    <h1>Congratulation!</h1>
+    <h4>WPM: 34</h4>
+</div>
